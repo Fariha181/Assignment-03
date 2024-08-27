@@ -1,11 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- font awesome CDN link  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- CDN link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind css config -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
 </head>
-<body>
-    
+<body class="font-Manrope">
+    <!-- header nav section -->
+    <header>
+        <nav class=" w-11/12 mx-auto">
+        <div class="navbar p-0 py-5">
+            <div class="navbar-start">
+                <a href="#"></a>
+              <a class="btn btn-ghost text-3xl font-bold">
+                <i class="fa-sharp fa-thin fa-arrow-down"></i>
+                Rinterio
+              </a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a class="text-[#494949] font-bold text-lg">Home</a></li>
+                <li><a class="text-[#737373] font-normal text-lg">Services</a></li>
+                <li><a class="text-[#737373] font-normal text-lg">Portfolio</a></li>
+                <li><a class="text-[#737373] font-normal text-lg">Blogs</a></li>
+                <li><a class="text-[#737373] font-normal text-lg">Contacts Us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+                <div class="flex items-center gap-5">
+                    <div class="flex items-center gap-5 ">
+                        <button>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <button class="">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                        <!-- <button class="bg-lime-400 rounded-3xl px-5 py-3 font-extrabold">Book Consult <i class=" fa-sharp fa-thin fa-arrow-down"></i></button> -->
+                        <a href="#" class="px-4 py-2 bg-lime-400 text-[#1C1C1C] font-semibold rounded-3xl">Book Consult  <i class=" fa-sharp fa-thin fa-arrow-down rotate-12"></i></a>
+                    </div>
+                </div>
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 gap-5">
+                  <li><a class="text-[#494949] font-bold text-lg">Home</a></li>
+                <li><a class="text-[#737373] font-normal text-lg">Services</a></li>
+                <li><a class="text-[#737373] font-normal text-lg">Portfolio</a></li>
+                <li><a class="text-[#737373] font-normal text-lg">Blogs</a></li>
+                <li><a class="text-[#737373] font-normal text-lg">Contacts Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          </nav>
+          <div class=" items-center justify-center">
+            <div class="flex justify-center items-center">
+                <img src="assets/banner.png" alt="">
+            </div>
+            <div class="text-center grid gap-4">
+                <h1 class="font-extrabold text-6xl text-[#212121]">A barn house of this design has a <br/> striking appearance</h1>
+                <br/>
+                <p class="text-[#494949] text-base">
+                    The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br/> accents, and large windows that flood the space with natural light.
+                </p>
+                <div class="">
+                <a href="#" class="px-4 py-2 bg-lime-200 text-[#1C1C1C] font-semibold rounded-3xl">View Details <i class=" fa-sharp fa-thin fa-arrow-down rotate-12"></i></a>
+            </div>
+            </div>
+          </div>
+    </header>
+        <section class="bg-[#F8F9FA] py-16">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold text-gray-800">About Us</h2>
+                <p class="text-gray-600 mt-4">We design thoughtful, livable spaces.</p>
+            </div>
+        </section>
 </body>
 </html>
